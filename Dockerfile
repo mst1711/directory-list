@@ -9,7 +9,7 @@ LABEL version="1.2.0" \
       com.github.actions.icon="check" \
       com.github.actions.color="green"
 
-
+WORKDIR /opt
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
